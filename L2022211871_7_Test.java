@@ -12,6 +12,15 @@ import static org.junit.Assert.*;
  * 3. 典型输入：输入典型的字符串及索引对来测试功能是否正常。
  * 4. 异常处理：确保输入不合法时程序能处理异常。
  */
+
+
+/**
+ * 异常处理优化： 对于 testInvalidIndex 测试用例，
+ * 虽然预期异常是 IndexOutOfBoundsException，
+ * 但是在 Solution7 实现中可能会根据业务逻辑处理不同的异常或场景。
+ * 因此可以进一步明确是抛出异常还是返回某个合理的默认值，如返回输入字符串。
+ */
+
 public class L2022211871_7_Test {
 
     private Solution7 solution;
